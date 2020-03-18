@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Espaço Vida Terapia Alternativa</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/deash_usuario.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/background.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/ficha_clientes.css" />
+   
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href=""> <img class="logo" src="../static/imagens/logo.jpg"> </a>
+                <h3 class="espaco">ESPAÇO VIDA TERAPIA ALTERNATIVA</h3>     
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbar1">
+            
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{url_for('deash_usuario')}}">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="btn ml-2 btn-warning" href="{{url_for('login')}}">Sair</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+
+
+        </br></br></br></br>
+
+    
+    
+        <table class="table table-sm table-striped table-bordered">
+            <thead class="thead-default thead-dark">
+                <h2 style="color:white" > PACIENTES </h2>
+            </br></br></br>
+                <tr>
+                    <th><h5>Nome Pasciente</h5></th>
+                    <th><h5>CPF</h5></th>
+                    <th><h5>Endereço</h5></th>
+                    <th><h5>DATA CADASTRO</h5></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+        
+           
+                <tr>
+                    <td style="color:cornsilk;">Henrique</td>
+                    <td style="color:cornsilk;">111111111</td>
+                    <td style="color:cornsilk;">Estrada do Cabuçu</td>
+                    <td style="color:cornsilk;">30/01/2020</td>
+                    <td>
+                        <a class="btn ml-2 btn-warning" href="">Abrir Relatório</a>
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:cornsilk;">Henrique</td>
+                    <td style="color:cornsilk;">111111111</td>
+                    <td style="color:cornsilk;">Estrada do Cabuçu</td>
+                    <td style="color:cornsilk;">30/01/2020</td>
+                    <td>
+                        <a class="btn ml-2 btn-warning" href="">Abrir Relatório</a>
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:cornsilk;">Henrique</td>
+                    <td style="color:cornsilk;">111111111</td>
+                    <td style="color:cornsilk;">Estrada do Cabuçu</td>
+                    <td style="color:cornsilk;">30/01/2020</td>
+                    <td>
+                        <a class="btn ml-2 btn-warning" href="">Abrir Relatório</a>
+                       
+                    </td>
+                </tr>
+                
+                
+            </tbody>
+        </table>
+        <a class="btn btn-danger" href="{{url_for('deash_usuario')}}">Voltar</a>
+
+
+</html>
